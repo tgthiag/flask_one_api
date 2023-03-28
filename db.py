@@ -1,3 +1,4 @@
+#Mock data for debugging purposes
 Products = [
     {
         'id': 1,
