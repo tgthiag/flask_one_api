@@ -1,6 +1,6 @@
 # flask_one_api  
-Creating a simple Python / Flask API with mock data, returning Json Response.  
-This mock data will be replaced by a database in a near future.  
+Creating a Python/Flask API with methods POST and GET, returning Json Response.  
+The mock data will be replaced by a database in a near future.  
 Debugging with Postman:  
 GET
 ![image](https://user-images.githubusercontent.com/86815680/228303040-122d2fe9-ae4d-4f79-bf18-3dda7360fd7c.png)
