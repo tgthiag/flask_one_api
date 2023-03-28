@@ -8,15 +8,21 @@ app.config.update(TEMPLATES_AUTO_RELOAD=True)
 @app.route('/products', methods=['GET'])
 def get_products():
     return make_response(
-        jsonify(Products)
+        jsonify(
+            message='Products list',
+            data=Products
+        )
     )
 
 @app.route('/products', methods=['POST'])
 def create_product():
     item = request.json
     Products.append(item)
-    response = make_response("Success")
-    response.status_code = 200
-    return response
+    return make_response(
+        jsonify(
+            message='Successfully registered',
+            data=item
+        )
+    )
 
 app.run()
